@@ -1,0 +1,170 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #071b17;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #06110f;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: #00ff99;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00ff99;
+}
+
+.hero {
+    text-align: center;
+    padding: 110px 20px;
+    background: linear-gradient(135deg, #064d38, #071b17);
+}
+
+.hero h2 {
+    font-size: 45px;
+    color: #00ff99;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #00ff99;
+    color: #071b17;
+    padding: 14px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 35px 15px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    background: #12372d;
+    padding: 25px 45px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.stat h2 {
+    color: #00ff99;
+}
+
+.section-title {
+    text-align: center;
+    margin: 40px 0;
+    color: #00ff99;
+}
+
+#search {
+    display: block;
+    width: 80%;
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px;
+}
+
+.player {
+    background: linear-gradient(145deg, #1d7654, #12372d);
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid #00ff99;
+    transition: 0.3s;
+}
+
+.player:hover {
+    transform: translateY(-10px);
+}
+
+.player img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.player h3 {
+    color: #00ff99;
+    margin: 10px;
+}
+
+.player p {
+    margin: 8px;
+}
+
+.team {
+    background: #12372d;
+    max-width: 500px;
+    margin: auto;
+    padding: 35px;
+    text-align: center;
+    border-radius: 15px;
+    line-height: 3;
+    border: 2px solid #00ff99;
+}
+
+footer {
+    margin-top: 60px;
+    background: #06110f;
+    padding: 30px;
+    text-align: center;
+    line-height: 2;
+}
+
+@media(max-width: 600px) {
+    header {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+}
